@@ -180,6 +180,35 @@ p {
     border-radius: 5px;
 }
 
+/* People Against Labs */
+#caption-b1 {
+    margin: 4em 0 auto auto;
+    padding: 0.5em 0 0.5em 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+#caption-b2 {
+    transition: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#pal {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#row-b {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+#row-b .c2 {
+    margin: 2em 0 0 2em;
+}
+
 /* Pie Clock */
 .caption {
     color: #999999;
@@ -195,7 +224,7 @@ p {
     border-bottom: 1px solid #EAEAEA;
 }
 
-.desc-clock-a {
+.desc-a {
     margin-right: 30px;
 }
 
@@ -316,7 +345,22 @@ p {
         margin: 1em 0 0.5em 0;
         padding: 0.5em 1em;
     }
-    .desc-clock-a {
+    #caption-b1 {
+        transition: none;
+        visibility: hidden;
+        margin: 0;
+        width: 0;
+        height: 0;
+    }
+    #caption-b2 {
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        margin-top: 1em;
+        padding-top: 0.5em;
+        border-top: 1px solid #EAEAEA;
+    }
+    .desc-a {
         margin-right: 0;
     }
     #pie {
