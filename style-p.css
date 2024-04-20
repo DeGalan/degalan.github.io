@@ -1,0 +1,394 @@
+* {
+    font-family: Elza, sans-serif;
+    transition: 0.5s ease;
+}
+
+.a {
+    transition: padding 0.5s ease;
+    color: inherit;
+    text-decoration: none;
+    height: 3em;
+    border: 0.5px rgba(0,0,0,0.125) solid;
+    border-radius: 3px;
+    padding: 0.5em 1em 12em 1em;
+    overflow: hidden;
+}
+
+.af {
+    color: rgba(0,127,255,0.75);
+    border-radius: 1em;
+    margin: 0 0.5em;
+    padding: 0 0.5em 0 0.4em;
+    border: 1px solid rgba(0,127,255,0.75);
+}
+
+.af:hover {
+    color: rgba(255,255,255,1);
+    background: rgba(0,127,255,0.75);
+    cursor: pointer;
+    box-shadow: inset 0 -60px 0 0 rgb(0,127,255);
+}
+
+.an {
+    color: #242424;
+}
+
+.an:hover {
+    color: rgba(0,127,255,0.75);
+}
+
+body {
+    color: #121212;
+    margin: 2em auto 2em auto;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #EEEEEE;
+    background: radial-gradient(circle, transparent 20%, #EEEEEE 20%, #EEEEEE 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #EEEEEE 20%, #EEEEEE 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#ffffff 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #ffffff 0.8px, #EEEEEE 0.8px) -0.4px 0;
+    background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+}
+
+h1 {
+    font-size: 18pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 14pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    position: relative;
+}
+
+.in {
+    display: grid;
+    background: #FFFFFF;
+    padding: 2em;
+    width: 80%;
+    height: auto;
+    max-width: 720px;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+}
+
+.inner {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.inner .cap1 {
+    transition: none;
+    font-size: 12pt;
+    font-weight: 100;
+    font-style: italic;
+    margin: none;
+    visibility: hidden;
+}
+
+.inner .cap2 {
+    transition: none;
+    font-size: 12pt;
+    font-weight: 100;
+    font-style: italic;
+    margin: 1em 0 0 0;
+    visibility: visible;
+}
+
+.inner img {
+    transition: none;
+    float: left;
+    width: 50%;
+    margin: -2em auto 1em auto;
+}
+
+.inside {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1em;
+    background: transparent;
+    padding: 2em 0 0 0;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-max {
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 3/2.95;
+}
+
+.nav {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background: #FFFFFF;
+    width: 80%;
+    max-width: 720px;
+    height: auto;
+    padding: 0.5em 2em;
+    margin: auto auto 0.5em auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.nav a {
+    float: left;
+    text-align: center;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    font-size: 11pt;
+    font-weight: 100;
+}
+
+.nav .sel {
+    color: #242424;
+    font-weight: 500;
+}
+
+p {
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 1.65em;
+    margin: 0.25em 0;
+    padding: 0.5em 0 0 0;
+}
+
+.rad {
+    border-radius: 5px;
+}
+
+.wide .c3 {
+    display: grid;
+    width: 100%;
+    height: 75vw;
+    border-radius: 5px;
+}
+
+/* Pie Clock */
+.caption {
+    color: #999999;
+    font-size: 12pt;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.65em;
+}
+
+#caption-a {
+    margin: 4em 0 auto auto;
+    padding: 0.5em 25% 0.5em 1em;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.desc-clock-a {
+    margin-right: 30px;
+}
+
+#pie {
+    background-image: url(images/clock.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+    border-radius: 5px;
+}
+
+#row-a {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+#row-a .c1 {
+    width: 100%;
+}
+
+#row-a .c2 {
+    width: 100%;
+}
+
+#row-tri {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+#row-tri .c1 {
+    background-image: url(portfolio/images/pie-clocks.png);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+}
+
+#row-tri .c2 {
+    margin-left: 1em;
+}
+
+#row-win {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 50% 50% 0;
+}
+
+#row-win div {
+    border-radius: 5px;
+    min-height: 30vw;
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#row-win .c1 {
+    background-image: url(portfolio/images/pal-window-1.jpg);
+    margin-right: 0.5em;
+}
+
+#row-win .c2 {
+    background-image: url(portfolio/images/pal-window-2.jpg);
+    margin-left: 0.5em;
+}
+
+#row-win .c3 {
+    background-image: url(portfolio/images/pal-window-3.jpg);
+}
+
+#win-alt {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#win-alt div {
+    border-radius: 5px;
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 580px) {
+    body {
+        margin: 0.75em 0 0 0;
+    }
+    .in {
+        padding: 28px 5%;
+    }
+    .in, .nav {
+        width: 90%;
+        border-radius: 0;
+    }
+    .nav {
+        margin: 0.25em 0;
+        padding: 0 5%;
+        background-color: rgba(0,0,0,0);
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #caption-a {
+        font-size: 11pt;
+        border-bottom: none;
+        border-left: 1px solid #EAEAEA;
+        margin: 1em 0 0.5em 0;
+        padding: 0.5em 1em;
+    }
+    .desc-clock-a {
+        margin-right: 0;
+    }
+    #pie {
+        height: 360px;
+    }
+    #row-a {
+        grid-template-columns: 100%;
+    }
+    #win-alt {
+        visibility: visible;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        width: 100%;
+        height: auto;
+    }
+    #win-alt div {
+        height: 80vw;
+    }
+    #win-alt .c1 {
+        background-image: url(portfolio/images/pal-window-1.jpg);
+    }
+    #win-alt .c2 {
+        background-image: url(portfolio/images/pal-window-2.jpg);
+    }
+    #win-alt .c3 {
+        background-image: url(portfolio/images/pal-window-3.jpg);
+    }
+    #row-tri {
+        grid-template-columns: 100%;
+    }
+    #row-tri .c1 {
+        transition: none;
+        background-position: top center;
+        outline: #F1F1F1 1px solid;
+        height: 50vw;
+        border-radius: 5px;
+    }
+    #row-tri .c2 {
+        margin: 1em 0 0 0;
+    }
+    #row-win {
+        grid-template-columns: 100%;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    #row-win div {
+        min-width: 100%;
+        min-height: 100vw;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    #caption-a {
+        margin-top: 3em;
+    }
+    .in, .nav {
+        width: 70%;
+        max-width: 70%;
+    }
+    #pie {
+        height: 420px;
+    }
+    #row-a {
+        grid-template-columns: 35% 65%;
+    }
+    #row-tri {
+        grid-template-columns: 65% 35%;
+    }
+    #row-tri .c1 {
+        transition: none;
+        height: 30vw;
+        border-radius: 5px;
+    }
+}
