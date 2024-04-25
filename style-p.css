@@ -373,6 +373,63 @@ p {
     margin: 2em 0 0 2em;
 }
 
+/* C# Music */
+#ccap1 {
+    margin: 4em -2em 0 0;
+    padding: 0 0 0.5em 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+#ccap2 {
+    margin: 4em 0 0 -2em;
+    padding: 0 0 0.5em 2em;
+    border-bottom: 1px solid #EAEAEA;
+    z-index: -1;
+}
+
+#cs-a {
+    transition: 0s ease;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#cs-a .cs1 {
+    margin: 0 2em 0 0;
+}
+
+#cs-a .cs2 {
+    transition: 0.125s ease;
+    width: 100%;
+    height: 50vw;
+    background: url(portfolio/images/csposter.jpg);
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#cs-b {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+#cs-b .cs3 {
+    display: grid;
+    width: 100%;
+    height: auto;
+    align-content: stretch;
+    overflow: hidden;
+    margin-top: -120px;
+    z-index: 1;
+}
+
+#cs-b .cs3 img {
+    width: 100%;
+}
+
 /* Blood Glucose Meter */
 #m4 {
     margin: 13em 0 0 2em;
@@ -483,6 +540,36 @@ p {
     margin-right: 30px;
 }
 
+.pclock {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(0,127,255);
+    background: transparent;
+    outline: 1px solid rgb(0,127,255);
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    margin: 1em 0 0 0;
+    padding: 1em 1em 0.825em 1em;
+    border-radius: 5px;
+    line-height: 0.5em;
+}
+
+.pclock::after {
+    content: '>';
+    transition: margin 0.5s ease;
+    margin-left: 0.5em;
+}
+
+.pclock:hover::after {
+    transition: margin 0.5s ease;
+    margin-left: 0.75em;
+}
+
+.pclock:hover {
+    box-shadow: inset 0 50px 0 rgba(0,127,255,0.0625);
+}
+
 #pie {
     background-image: url(images/clock.jpg);
     background-position: center center;
@@ -574,6 +661,7 @@ p {
     background-size: contain;
 }
 
+/* Very Narrow Width */
 @media only screen and (max-width: 580px) {
     body {
         margin: 0.75em 0 0 0;
@@ -604,6 +692,7 @@ p {
     }
 }
 
+/* Wide+ Width */
 @media only screen and (max-width: 1224px) {
     #caption-c2 {
         margin: 3em 0 0 0;
@@ -618,6 +707,7 @@ p {
     }
 }
 
+/* Narrow Width */
 @media only screen and (max-width: 860px) {
     .alt1 {
         visibility: hidden;
@@ -680,6 +770,18 @@ p {
         padding: 0 0 0.25em 1em;
         max-width: 70%;
     }
+    #ccap1 {
+        border-bottom: 0px solid #EAEAEA;
+        border-left: 1px solid #EAEAEA;
+        margin: 0;
+        padding: 0 0 0 1em;
+    }
+    #ccap2 {
+        border-bottom: 0px solid #EAEAEA;
+        border-left: 1px solid #EAEAEA;
+        margin: 0;
+        padding: 0 0 0 1em;
+    }
     #crane-2 {
         height: 90vw;
         max-height: 90vw;
@@ -687,6 +789,19 @@ p {
     }
     #crane-3 {
         background-position: top center;
+    }
+    #cs-a .c1 {
+        transition: 0.125s ease;
+        margin: 0 0 0 0;
+    }
+    #cs-a .cs2 {
+        transition: 0s ease;
+        margin: 1em 0 0 0;
+        width: 100%;
+        height: 112.5vw;
+    }
+    #cs-b .cs3 {
+        margin: 0;
     }
     .desc-a {
         margin: 0;
@@ -732,7 +847,7 @@ p {
     #pie {
         height: 360px;
     }
-    #row-a, #row-c, #row-d, #row-e, #meter1, #meter2 {
+    #row-a, #row-c, #row-d, #row-e, #meter1, #meter2, #cs-a, #cs-b {
         grid-template-columns: 100%;
     }
     #row-d {
@@ -791,6 +906,7 @@ p {
     }
 }
 
+/* Wide Width */
 @media only screen and (min-width: 1220px) {
     #caption-a {
         margin-top: 3em;
@@ -802,6 +918,15 @@ p {
         height: 50vw;
         max-height: 50vw;
         background-position: top center;
+    }
+    #cs-a {
+        grid-template-columns: 40% 60%;
+    }
+    #cs-a .cs2 {
+        background-image: url(portfolio/images/csposter-wide.jpg);
+        background-position: top center;
+        width: 100%;
+        height: 35vw;
     }
     .g4 {
         margin-top: 3em;
