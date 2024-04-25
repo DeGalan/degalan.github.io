@@ -57,9 +57,9 @@ h1 {
 }
 
 h2 {
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 400;
-    text-transform: uppercase;
+    line-height: 1.5em;
     padding: 0;
 }
 
@@ -180,6 +180,170 @@ p {
     border-radius: 5px;
 }
 
+/* Crane VS. Crane */
+.alt1 {
+    visibility: visible;
+}
+
+.alt2 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.c4 h2 {
+    margin: 2em 0 0 0;
+}
+
+.c4 #cranes {
+    display: grid;
+    width: 100%;
+    margin: 1.5em 0 0 0;
+    border-radius: 5px;
+}
+
+#caption-c1 {
+    border-bottom: 1px solid #EAEAEA;
+    margin: 3em 0 0 0;
+    padding: 0 2em 0.5em 0;
+}
+
+#caption-c2 {
+    border-bottom: 1px solid #EAEAEA;
+    margin: 3em 0 0 -5vw;
+    padding: 0 0 0.5em 2em;
+}
+
+#crane-1 {
+    background-image: url(portfolio/images/crane-1.jpg);
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 480px;
+    border-radius: 5px;
+}
+
+#crane-2 {
+    background-image: url(portfolio/images/crane-2.png);
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 480px;
+    border-radius: 5px;
+}
+
+#row-c {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+#row-d {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    overflow: hidden;
+    margin: 2em 0 0 0;
+}
+
+#row-d .c4 {
+    margin: 0 0 0 0;
+}
+
+#row-e {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    margin-top: -9em;
+}
+
+#row-e .c2 {
+    z-index: 1;
+}
+
+#sketch {
+    display: none;
+    width: 100%;
+    background: url(portfolio/images/crane-3.jpg);
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+/* Gourmet – Animal Feed */
+.g4 {
+    margin: 0 0 0 1em;
+}
+
+.gourmet1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+.gourmet2 {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    overflow: hidden;
+}
+
+#gdesc {
+    margin: 0 2em 0 0;
+}
+
+#gdisp1 {
+    width: 100%;
+    height: 25vw;
+    background-image: url(portfolio/images/gourmet.png);
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+#gdisp2 {
+    width: 100%;
+    height: 25vw;
+    background-image: url(portfolio/images/gourmet-2.png);
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#gcap1 {
+    display: none;
+    margin: 1em 0 0 0;
+    padding: 0.5em 0 0.5em 1em;
+    border-left: 1px solid #EAEAEA;
+}
+
+#gcap2 {
+    display: grid;
+    margin: 3em 0 0 0;
+    padding: 0 15% 0.5em 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+
 /* People Against Labs */
 #caption-b1 {
     margin: 4em 0 auto auto;
@@ -207,6 +371,97 @@ p {
 
 #row-b .c2 {
     margin: 2em 0 0 2em;
+}
+
+/* Blood Glucose Meter */
+#m4 {
+    margin: 13em 0 0 2em;
+}
+#m4 p {
+    margin: 0;
+    padding: 0;
+}
+
+#mcap1 {
+    margin: 4em 0 0 0;
+    padding: 0 2em 0.5em 1em;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+#meter1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+#meter1 #m2 {
+    display: grid;
+    width: 100%;
+    height: 480px;
+    background-image: url(portfolio/images/meters.png);
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#meter2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60% 40%;
+    overflow: hidden;
+    margin: -12em 0 0 0;
+}
+
+#meter2 #m3 {
+    display: grid;
+    height: 480px;
+    background-image: url(portfolio/images/mdisplay.png);
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1400px) {
+    #m4 p {
+        margin: 0;
+        padding: 0;
+    }
+    #meter1 {
+        grid-template-columns: 40% 60%;
+    }
+    #meter1 #m2 {
+        height: 650px;
+        background-position: top center;
+    }
+    #meter2 {
+        grid-template-columns: 60% 40%;
+        background-position: left center;
+        margin: -16em 0 0 0;
+    }
+    #meter2 #m3 {
+        width: 100%;
+        height: 650px;
+    }
+    #meter2 #m4 {
+        margin: 18em 0 0 2em;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    #mcap1 {
+        margin: 4em 0 0 0;
+        padding: 0 2em 0.5em 0;
+    }
+    #meter1 {
+        grid-template-columns: 35% 65%;
+    }
 }
 
 /* Pie Clock */
@@ -323,6 +578,12 @@ p {
     body {
         margin: 0.75em 0 0 0;
     }
+    #caption-c1 {
+        max-width: 360px;
+    }
+    #gcap1 {
+        max-width: 300px;
+    }
     .in {
         padding: 28px 5%;
     }
@@ -335,9 +596,54 @@ p {
         padding: 0 5%;
         background-color: rgba(0,0,0,0);
     }
+    #meter2 {
+        overflow: visible;
+    }
+    #meter2 div:first-of-type {
+        margin-left: -4em;
+    }
+}
+
+@media only screen and (max-width: 1224px) {
+    #caption-c2 {
+        margin: 3em 0 0 0;
+        padding: 0 0 0.5em 0;
+    }
+    #row-e {
+        margin-top: -16em;
+    }
+    #gdisp1 {
+        height: 360px;
+        background-position: 35%;
+    }
 }
 
 @media only screen and (max-width: 860px) {
+    .alt1 {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    .alt2 {
+        margin-top: 1em;
+        visibility: visible;
+        display: grid;
+    }
+    .alt3 {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    .alt4 {
+        visibility: visible;
+        display: grid;
+    }
     #caption-a {
         font-size: 11pt;
         border-bottom: none;
@@ -360,14 +666,86 @@ p {
         padding-top: 0.5em;
         border-top: 1px solid #EAEAEA;
     }
+    #caption-c1 {
+        border-bottom: 0px solid transparent;
+        border-left: 1px solid #EAEAEA;
+        margin: 1em 0 0 0;
+        padding: 0 0 0.25em 1em;
+        max-width: 70%;
+    }
+    #caption-c2 {
+        border-bottom: 0px solid transparent;
+        border-left: 1px solid #EAEAEA;
+        margin: 1em 0 -2em 0;
+        padding: 0 0 0.25em 1em;
+        max-width: 70%;
+    }
+    #crane-2 {
+        height: 90vw;
+        max-height: 90vw;
+        background-size: cover;
+    }
+    #crane-3 {
+        background-position: top center;
+    }
     .desc-a {
-        margin-right: 0;
+        margin: 0;
+    }
+    .g4 {
+        margin: 0;
+    }
+    .gourmet1, .gourmet2 {
+        grid-template-columns: 100%;
+    }
+    #gcap1 {
+        display: grid;
+    }
+    #gcap2 {
+        display: none;
+    }
+    #gdesc {
+        margin: 0 0 1em 0;
+    }
+    #gdisp1 {
+        height: 360px;
+        background-color: #EEEEEE;
+    }
+    #gdisp2 {
+        height: 360px;
+    }
+    #mcap1 {
+        margin: 4em 0 0 0;
+        padding: 0.5em 0 0.5em 1em;
+        border-bottom: 0px solid #EAEAEA;
+        border-left: 1px solid #EAEAEA;
+    }
+    #meter1 #m2 {
+        width: 100%;
+        height: 560px;
+    }
+    #meter2 {
+        margin: -9em 0 0 0;
+    }
+    #meter2 #m4 {
+        margin: 0;
     }
     #pie {
         height: 360px;
     }
-    #row-a {
+    #row-a, #row-c, #row-d, #row-e, #meter1, #meter2 {
         grid-template-columns: 100%;
+    }
+    #row-d {
+        margin-top: -0.5em;
+    }
+    #row-e {
+        margin: 0 0 -1em 0;
+    }
+    #row-e .c1 {
+        margin-bottom: 4em;
+    }
+    #sketch {
+        display: grid;
     }
     #win-alt {
         visibility: visible;
@@ -416,6 +794,29 @@ p {
 @media only screen and (min-width: 1220px) {
     #caption-a {
         margin-top: 3em;
+    }
+    #caption-c1 {
+        padding: 0 37.5% 0.5em 1em;
+    }
+    #crane-2 {
+        height: 50vw;
+        max-height: 50vw;
+        background-position: top center;
+    }
+    .g4 {
+        margin-top: 3em;
+    }
+    .gourmet1 {
+        grid-template-columns: 35% 65%;
+    }
+    .gourmet2 {
+        grid-template-columns: 65% 35%;
+    }
+    #gcap2 {
+        padding: 0 25% 0.5em 0;
+    }
+    #gdisp1 {
+        height: 560px;
     }
     .in, .nav {
         width: 70%;
