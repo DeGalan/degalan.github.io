@@ -1,0 +1,73 @@
+/* Welcome Message */
+
+#intro {
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.0075em;
+}
+
+/* Links */
+
+#link {
+    color: #FD9000;
+    text-decoration: none;
+}
+
+#link:hover {
+    color: #FD5000;
+}
+
+/* Portfolio Grid located in ingrid.css! */
+
+/* Portfolio Grid Elements */
+
+.g-all {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#g-c {
+    background-image: url(images/c.png);
+}
+
+#g-crane {
+    background-image: url(images/crane.jpg);
+}
+
+#g-ethics {
+    background-image: url(images/ethics.png);
+}
+
+#g-gourmet {
+    background-image: url(images/gourmet.png)
+}
+
+#g-meter {
+    background-image: url(images/meter.png);
+}
+
+#g-pal {
+    background-image: url(images/pal.jpg);
+}
+
+#g-pie {
+    background-image: url(images/clock.jpg);
+}
+
+/* Apply to All */
+
+.if, .i1, .i2, .i3, .i4, .i5, .i6 {
+    background-color: #EAEAEA;
+    height: 40vw;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+    .if {
+        height: 360px;
+    }
+}
